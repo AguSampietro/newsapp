@@ -1,8 +1,8 @@
-# newsapp
+# Flutter News App
 
-A new Flutter project.
+A new Flutter project that conect a real news API https://newsapi.org/
 
-## Getting Started
+## Getting Started with Flutter
 
 This project is a starting point for a Flutter application.
 
