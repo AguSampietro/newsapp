@@ -66,7 +66,7 @@ class _NavegacionModel with ChangeNotifier {
 
     _pageController.animateToPage(value, duration: Duration(milliseconds: 250), curve: Curves.easeOut);
     // avisar a los widgets
-    notifyListeners();
+    notifyListeners();   
   }
 
   PageController get pageController => this._pageController;
