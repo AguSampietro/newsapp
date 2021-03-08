@@ -11,10 +11,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider( create: (_) => new NewsService(), ),
+        ChangeNotifierProvider(
+          create: (_) => new NewsService(),
+        ),
       ],
       child: MaterialApp(
-        title: 'Material App',
+        title: 'Material',
         debugShowCheckedModeBanner: false,
         theme: miTema,
         home: TabsPage(),
