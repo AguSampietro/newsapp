@@ -20,7 +20,6 @@ class TabsPage extends StatelessWidget {
 class _Navegacion extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
     final navegacionModel = Provider.of<_NavegacionModel>(context);
 
     return BottomNavigationBar(
@@ -28,7 +27,7 @@ class _Navegacion extends StatelessWidget {
       onTap: (index) => navegacionModel.paginaActual = index,
       items: [
         BottomNavigationBarItem(
-            icon: Icon(Icons.person_outline), title: Text('Para ti')),
+            icon: Icon(Icons.person_outline), title: Text('Para Ti')),
         BottomNavigationBarItem(
             icon: Icon(Icons.public), title: Text('Encabezados')),
       ],
@@ -39,9 +38,7 @@ class _Navegacion extends StatelessWidget {
 class _Paginas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
     final navegacionModel = Provider.of<_NavegacionModel>(context);
-  
 
     return PageView(
       //physics: BouncingScrollPhysics(),
@@ -64,9 +61,10 @@ class _NavegacionModel with ChangeNotifier {
   set paginaActual(value) {
     this._paginaActual = value;
 
-    _pageController.animateToPage(value, duration: Duration(milliseconds: 250), curve: Curves.easeOut);
+    _pageController.animateToPage(value,
+        duration: Duration(milliseconds: 250), curve: Curves.easeOut);
     // avisar a los widgets
-    notifyListeners();   
+    notifyListeners();
   }
 
   PageController get pageController => this._pageController;
