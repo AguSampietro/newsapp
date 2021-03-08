@@ -29,7 +29,7 @@ class _Navegacion extends StatelessWidget {
         BottomNavigationBarItem(
             icon: Icon(Icons.person_outline), title: Text('Para Ti')),
         BottomNavigationBarItem(
-            icon: Icon(Icons.public), title: Text('Encabezados')),
+            icon: Icon(Icons.public), title: Text('Por rubros')),
       ],
     );
   }
